@@ -1,0 +1,77 @@
+.search-page .search-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 12px 16px;
+  background-color: var(--surface);
+  border: 1px solid var(--border-color);
+  border-radius: 24px;
+  font-size: 15px;
+  color: var(--text-primary);
+}
+
+.search-bar input::placeholder {
+  color: var(--text-secondary);
+}
+
+.search-bar button {
+  width: 48px;
+  height: 48px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s;
+}
+
+.search-bar button:disabled {
+  opacity: 0.5;
+}
+
+.search-results, .popular-stocks {
+  margin-bottom: 32px;
+}
+
+.search-results h2, .popular-stocks h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.search-page .stock-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-page .stock-info {
+  flex: 1;
+  cursor: pointer;
+}
+
+.add-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.add-button.added {
+  background-color: var(--success-color);
+}
+
+.add-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

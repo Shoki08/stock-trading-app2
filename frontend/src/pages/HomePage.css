@@ -1,0 +1,138 @@
+.home-page .quick-actions {
+  margin-bottom: 24px;
+}
+
+.action-card {
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(135deg, var(--primary-color) 0%, #1557b0 100%);
+  border-radius: 12px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s;
+}
+
+.action-card:active {
+  transform: scale(0.98);
+}
+
+.watchlist-section, .market-summary {
+  margin-bottom: 32px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.section-header h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.section-header button {
+  padding: 6px 12px;
+  background-color: var(--surface);
+  border-radius: 6px;
+  color: var(--primary-color);
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.stock-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.stock-card {
+  background-color: var(--surface);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.stock-card:active {
+  background-color: var(--border-color);
+}
+
+.stock-info {
+  flex: 1;
+}
+
+.stock-symbol {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.stock-name {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.stock-price {
+  text-align: right;
+}
+
+.stock-price .price {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.stock-price .change {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  justify-content: flex-end;
+}
+
+.market-summary h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.summary-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.summary-card {
+  background-color: var(--surface);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.summary-card .label {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.summary-card .value {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.summary-card .change {
+  font-size: 13px;
+}
